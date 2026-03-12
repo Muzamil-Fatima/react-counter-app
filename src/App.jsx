@@ -2,7 +2,6 @@ import {useEffect, useState } from "react";
 function App() {
   const [count, setCount] = useState(0);
 // Save Counter in Local Storage
-// save in string
 useEffect(()=>{
   localStorage.setItem("count", JSON.stringify(count));
 },[count]);
